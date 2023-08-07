@@ -53,6 +53,7 @@ public class APIService: NSObject, ApiServiceProtocol {
         }
         
         guard let url = URL(string:Config.BASE_URL + path) else { return completion(.Error(AlertMessage.INVALID_URL)) }
+          
         let request = self.buildRequest(with: method, url: url, parameters: parameters, files: files)
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard error == nil else { return completion(.Error(error!.localizedDescription)) }
@@ -75,7 +76,8 @@ extension APIService {
         case .GET:
             
             if let params = parameters,params.count > 0 {
-                let queryUrl = url.appendingPathComponent("?"+buildParams(parameters: params))
+                let queryString = url.absoluteString + "?" + buildParams(parameters: params)
+                guard let queryUrl = URL.init(string: queryString) else{ return request! }
                 request = URLRequest(url: queryUrl)
             } else {
                 request = URLRequest(url: url)
@@ -123,12 +125,12 @@ extension APIService {
             break
         }
         
-        var req = request ?? URLRequest(url: url)
+     //   var req = request ?? URLRequest(url: url)
         
         // pass your authorisation token here.
         // it can be saved in nsuserdefaaults or in singelton
         if let token = AppInstance.shared.authToken {
-            req.addValue(token, forHTTPHeaderField: "Authorization")
+            request!.addValue(token, forHTTPHeaderField: "Authorization")
         }
         request?.httpMethod = method.rawValue
         
@@ -172,9 +174,10 @@ extension APIService {
     
     func handleResponse<T: Decodable>(data: Data, response:URLResponse?, modelType: T.Type, completion: @escaping (Result<T?>) -> Void) {
         let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 0
-        
+        print(statusCode)
         // TODO: Update this if your server update HttpResponse code in case of error
         if statusCode == ResponseCode.success.rawValue {
+                      
             do {
                 let genericModel = try JSONDecoder().decode(modelType, from: data)
                 completion(.Success(genericModel))

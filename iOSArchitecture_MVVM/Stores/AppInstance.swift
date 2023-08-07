@@ -12,9 +12,12 @@ import Foundation
 class AppInstance: NSObject {
    
     static let shared = AppInstance()
-    var user:User?
-    var authToken:String?
-    
+    var LoginModel: LoginModel?
+    var SessionFile: SessionFile?
+    var authToken: String?
+    var user_Id: String?
+//    var getProfile: UserProfile?
+//    var updateData: UpdateModel?
     override init() {
         super.init()
     }

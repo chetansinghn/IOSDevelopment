@@ -1,0 +1,192 @@
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "0SB-pr-Bd0"; */
+"0SB-pr-Bd0.normalTitle" = "Continue";
+
+/* Class = "UISegmentedControl"; 1Dx-bg-HOi.segmentTitles[0] = "Mentor"; ObjectID = "1Dx-bg-HOi"; */
+"1Dx-bg-HOi.segmentTitles[0]" = "Mentor";
+
+/* Class = "UISegmentedControl"; 1Dx-bg-HOi.segmentTitles[1] = "Mentee"; ObjectID = "1Dx-bg-HOi"; */
+"1Dx-bg-HOi.segmentTitles[1]" = "Mentee";
+
+/* Class = "UIButton"; configuration.title = "log in"; ObjectID = "1ct-nH-fvu"; */
+"1ct-nH-fvu.configuration.title" = "log in";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1ct-nH-fvu"; */
+"1ct-nH-fvu.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Add More Skills"; ObjectID = "4Xs-ys-Ebj"; */
+"4Xs-ys-Ebj.text" = "Add More Skills";
+
+/* Class = "UITextField"; placeholder = "Country*"; ObjectID = "5bh-VL-jnE"; */
+"5bh-VL-jnE.placeholder" = "Country*";
+
+/* Class = "UITextField"; placeholder = "Date of Birth*"; ObjectID = "5jW-fp-kVs"; */
+"5jW-fp-kVs.placeholder" = "Date of Birth*";
+
+/* Class = "UITextField"; placeholder = "Last Name*"; ObjectID = "6Ia-Bs-FT6"; */
+"6Ia-Bs-FT6.placeholder" = "Last Name*";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "6JF-JY-0AZ"; */
+"6JF-JY-0AZ.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "Add Bank Account"; ObjectID = "6aE-aE-21D"; */
+"6aE-aE-21D.configuration.title" = "Add Bank Account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6aE-aE-21D"; */
+"6aE-aE-21D.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hello! I guess you are new around here."; ObjectID = "7it-4V-Na8"; */
+"7it-4V-Na8.text" = "Hello! I guess you are new around here.";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "Bbg-jf-wH1"; */
+"Bbg-jf-wH1.configuration.title" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Bbg-jf-wH1"; */
+"Bbg-jf-wH1.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Address*"; ObjectID = "Bpi-X6-3eB"; */
+"Bpi-X6-3eB.placeholder" = "Address*";
+
+/* Class = "UITextField"; placeholder = "Email ID*"; ObjectID = "DdX-yj-KRf"; */
+"DdX-yj-KRf.placeholder" = "Email ID*";
+
+/* Class = "UILabel"; text = "Economics Nature"; ObjectID = "DtQ-a2-n1w"; */
+"DtQ-a2-n1w.text" = "Economics Nature";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "DtU-an-hAJ"; */
+"DtU-an-hAJ.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "By signing up, you've agree to our Terms and Conditions and Privacy Policy."; ObjectID = "I0D-MI-fKF"; */
+"I0D-MI-fKF.text" = "By signing up, you've agree to our Terms and Conditions and Privacy Policy.";
+
+/* Class = "UITextField"; placeholder = "+1"; ObjectID = "Jbo-A0-fyq"; */
+"Jbo-A0-fyq.placeholder" = "+1";
+
+/* Class = "UITextField"; placeholder = "Enter a referral code"; ObjectID = "KeS-Gz-yjH"; */
+"KeS-Gz-yjH.placeholder" = "Enter a referral code";
+
+/* Class = "UITextField"; placeholder = "Upload Certificate*"; ObjectID = "KvZ-5d-MXN"; */
+"KvZ-5d-MXN.placeholder" = "Upload Certificate*";
+
+/* Class = "UITabBarItem"; title = "login"; ObjectID = "LEK-5A-dBy"; */
+"LEK-5A-dBy.title" = "login";
+
+/* Class = "UILabel"; text = "Sessions"; ObjectID = "Lyd-HC-7R8"; */
+"Lyd-HC-7R8.text" = "Sessions";
+
+/* Class = "UITextField"; placeholder = "Email Id"; ObjectID = "NNi-AR-ocw"; */
+"NNi-AR-ocw.placeholder" = "Email Id";
+
+/* Class = "UILabel"; text = "Hello, Cameron"; ObjectID = "NOT-E3-5N5"; */
+"NOT-E3-5N5.text" = "Hello, Cameron";
+
+/* Class = "UILabel"; text = "Sign up"; ObjectID = "Rfw-jK-hqe"; */
+"Rfw-jK-hqe.text" = "Sign up";
+
+/* Class = "UITextField"; placeholder = "Provinces*"; ObjectID = "S3L-8a-TWF"; */
+"S3L-8a-TWF.placeholder" = "Provinces*";
+
+/* Class = "UITextField"; placeholder = "+1"; ObjectID = "ST5-6T-hJp"; */
+"ST5-6T-hJp.placeholder" = "+1";
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "TNr-zC-9rh"; */
+"TNr-zC-9rh.configuration.title" = "Send";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TNr-zC-9rh"; */
+"TNr-zC-9rh.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Don't worry! It happens. Please enter the address associated with your account"; ObjectID = "UWO-sA-JkF"; */
+"UWO-sA-JkF.text" = "Don't worry! It happens. Please enter the address associated with your account";
+
+/* Class = "UILabel"; text = "Create Profile"; ObjectID = "Yym-ed-IeX"; */
+"Yym-ed-IeX.text" = "Create Profile";
+
+/* Class = "UILabel"; text = "Forgot Password?"; ObjectID = "ZOb-II-1yN"; */
+"ZOb-II-1yN.text" = "Forgot Password?";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "ah7-fm-zDq"; */
+"ah7-fm-zDq.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "   Email Id"; ObjectID = "bEn-y8-flA"; */
+"bEn-y8-flA.placeholder" = "   Email Id";
+
+/* Class = "UITextField"; placeholder = "First Name*"; ObjectID = "dq0-kY-oCu"; */
+"dq0-kY-oCu.placeholder" = "First Name*";
+
+/* Class = "UILabel"; text = "Joined us before? "; ObjectID = "e2f-2C-f9r"; */
+"e2f-2C-f9r.text" = "Joined us before? ";
+
+/* Class = "UILabel"; text = "Career Consultation"; ObjectID = "eGj-ED-CmF"; */
+"eGj-ED-CmF.text" = "Career Consultation";
+
+/* Class = "UISegmentedControl"; eVC-p1-Kjm.segmentTitles[0] = "Mentor"; ObjectID = "eVC-p1-Kjm"; */
+"eVC-p1-Kjm.segmentTitles[0]" = "Mentor";
+
+/* Class = "UISegmentedControl"; eVC-p1-Kjm.segmentTitles[1] = "Mentee"; ObjectID = "eVC-p1-Kjm"; */
+"eVC-p1-Kjm.segmentTitles[1]" = "Mentee";
+
+/* Class = "UIButton"; configuration.title = "Language*"; ObjectID = "f72-aJ-pYs"; */
+"f72-aJ-pYs.configuration.title" = "Language*";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f72-aJ-pYs"; */
+"f72-aJ-pYs.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Session Started"; ObjectID = "ffN-MN-rsz"; */
+"ffN-MN-rsz.text" = "Session Started";
+
+/* Class = "UILabel"; text = "Aliqua id fugiat nostrud irure."; ObjectID = "iEn-ZD-p6w"; */
+"iEn-ZD-p6w.text" = "Aliqua id fugiat nostrud irure.";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "ih7-9c-lOx"; */
+"ih7-9c-lOx.placeholder" = "Last Name";
+
+/* Class = "UITextField"; placeholder = "Postal Code*"; ObjectID = "j8K-IO-CIU"; */
+"j8K-IO-CIU.placeholder" = "Postal Code*";
+
+/* Class = "UILabel"; text = "Skill Certification"; ObjectID = "jTN-SP-ny0"; */
+"jTN-SP-ny0.text" = "Skill Certification";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "kox-lT-bAB"; */
+"kox-lT-bAB.placeholder" = "First Name";
+
+/* Class = "UIButton"; configuration.title = "Back"; ObjectID = "lax-xc-Ldm"; */
+"lax-xc-Ldm.configuration.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lax-xc-Ldm"; */
+"lax-xc-Ldm.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Mobile No."; ObjectID = "lhc-Ct-7M9"; */
+"lhc-Ct-7M9.placeholder" = "Mobile No.";
+
+/* Class = "UITextField"; placeholder = "450 4501 1850"; ObjectID = "m4v-X9-Set"; */
+"m4v-X9-Set.placeholder" = "450 4501 1850";
+
+/* Class = "UIButton"; configuration.title = "Gender*"; ObjectID = "n24-qR-MAI"; */
+"n24-qR-MAI.configuration.title" = "Gender*";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "n24-qR-MAI"; */
+"n24-qR-MAI.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Skill Type*"; ObjectID = "nEh-VT-Ddn"; */
+"nEh-VT-Ddn.configuration.title" = "Skill Type*";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nEh-VT-Ddn"; */
+"nEh-VT-Ddn.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Skill Name*"; ObjectID = "sAe-X2-BJJ"; */
+"sAe-X2-BJJ.placeholder" = "Skill Name*";
+
+/* Class = "UITextField"; placeholder = "Bio*"; ObjectID = "sTc-Ew-ZoO"; */
+"sTc-Ew-ZoO.placeholder" = "Bio*";
+
+/* Class = "UITextField"; placeholder = "VerificationId"; ObjectID = "t4e-yX-lUb"; */
+"t4e-yX-lUb.placeholder" = "VerificationId";
+
+/* Class = "UITextField"; placeholder = "City*"; ObjectID = "y8e-wN-Cv5"; */
+"y8e-wN-Cv5.placeholder" = "City*";
+
+/* Class = "UIButton"; configuration.title = "Add Documents"; ObjectID = "zUi-sV-62e"; */
+"zUi-sV-62e.configuration.title" = "Add Documents";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zUi-sV-62e"; */
+"zUi-sV-62e.normalTitle" = "Button";

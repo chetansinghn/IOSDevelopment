@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  iOSArchitecture_MVVM
+
+  Created by Chetan Singh Negi on 29/07/23.
+  Copyright © 2023 Surjeet Singh. All rights reserved.
+*/
+
+
+// loginScreen
+
+
+
+"Let's Log in" = "Let's Log in";
+"Welcome Back, you have been missed!" = "Welcome Back, you have been missed!";
+"Keep me signed in" = "Keep me signed in";
+"ForgetPassword?" = "ForgetPassword?";
+"Log in" = "Log in";
+"Don't have an account yet" = "Don't have an account yet";
+"Signup" = "Signup";
+
+
+// ForgetPassword
+
+"Forgot Password" = "Forgot Password";
+"Don't worry! It happens. Please enter the address associated with your account" = "Don't worry! It happens. Please enter the address associated with your account";
+"send" = "send";
+
+

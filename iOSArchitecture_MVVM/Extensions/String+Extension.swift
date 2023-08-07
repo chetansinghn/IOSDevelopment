@@ -101,6 +101,11 @@ extension String {
         return emailTest.evaluate(with: self)
     }
     
+    
+    func localized() -> String{
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.localizedBundle(), value: "", comment: "")//NSLocalizedString(self, comment: self)
+    }
+    
     public func isValidPincode() -> Bool {
         let stricterFilterString : String = "[1-9][0-9]{5}"
         let pincodeTest : NSPredicate = NSPredicate(format: "SELF MATCHES %@", stricterFilterString)

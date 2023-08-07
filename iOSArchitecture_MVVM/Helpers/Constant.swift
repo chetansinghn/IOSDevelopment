@@ -31,3 +31,25 @@ public struct AlertMessage {
     static let INVALID_PASSWORD  = "Please enter a minimum 6 character password"
  
 }
+
+public struct StringCall {
+    
+    static let OnboardingImage1 = "Group 89"
+    static let Onboardingheading1 = "Get          Mentorship"
+    static let Onboardingsubheading1 = "Welcome to our mentorship program"
+
+    static let OnboardingImage2 = "Group 91"
+    static let Onboardingheading2 = "Find             Best Mentors"
+    static let Onboardingsubheading2 = "We provide you with access to professionals who would guide you in your journey to sucess"
+    
+    static let OnboardingImage3 = "Group 92"
+    static let Onboardingheading3 = "Guide a Mentee"
+    static let Onboardingsubheading3 = "Join Pxalm as Mentor and help Mentees become experts tomorrow"
+}
+ 
+public struct SegmentControllCall{
+    
+
+    
+    
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Light.otf">
+            <string>SFProText-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" restorationIdentifier="HeaderViewController" id="iN0-l3-epB" customClass="HeaderViewController" customModule="iOSArchitecture_MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="409"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector 1" translatesAutoresizingMaskIntoConstraints="NO" id="Cqp-d9-IRH">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="237"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="393" id="CCA-bd-iLF"/>
+                        <constraint firstAttribute="height" constant="237" id="d4p-UQ-O8L"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 93" translatesAutoresizingMaskIntoConstraints="NO" id="NsF-KT-egd">
+                    <rect key="frame" x="52" y="68" width="289" height="227"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="289" id="l44-kd-43w"/>
+                        <constraint firstAttribute="height" constant="227" id="wDL-dU-H2k"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Log in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBw-6i-4pc">
+                    <rect key="frame" x="22" y="327" width="260" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="5mX-s1-aly"/>
+                        <constraint firstAttribute="height" constant="43" id="zrU-yp-65h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back, you've been missed!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7s-Pw-w5i">
+                    <rect key="frame" x="23" y="377" width="329" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="329" id="XK4-gh-59I"/>
+                        <constraint firstAttribute="height" constant="20.5" id="r6V-9q-mNQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="cBw-6i-4pc" firstAttribute="top" secondItem="NsF-KT-egd" secondAttribute="bottom" constant="32" id="16H-B4-Gyt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NsF-KT-egd" secondAttribute="trailing" constant="52" id="2Z2-wi-Y83"/>
+                <constraint firstItem="Cqp-d9-IRH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="5Ie-RQ-4gB"/>
+                <constraint firstItem="NsF-KT-egd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="BoZ-uO-vv3"/>
+                <constraint firstItem="T7s-Pw-w5i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="NvT-uf-FSq"/>
+                <constraint firstItem="T7s-Pw-w5i" firstAttribute="top" secondItem="cBw-6i-4pc" secondAttribute="bottom" constant="7" id="SWY-bp-1y2"/>
+                <constraint firstItem="Cqp-d9-IRH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XYY-Ma-Inm"/>
+                <constraint firstItem="NsF-KT-egd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="52" id="ef7-Ua-GmL"/>
+                <constraint firstItem="cBw-6i-4pc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="22" id="kcu-pV-jy6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T7s-Pw-w5i" secondAttribute="trailing" constant="41" id="mJ3-CJ-7rH"/>
+                <constraint firstItem="Cqp-d9-IRH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oKj-fy-aIc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="frontImageView" destination="NsF-KT-egd" id="ZXj-eV-JAs"/>
+                <outlet property="headingLabel" destination="cBw-6i-4pc" id="Yf9-5v-Ggh"/>
+                <outlet property="subheadingLabel" destination="T7s-Pw-w5i" id="XMR-0B-ZCI"/>
+            </connections>
+            <point key="canvasLocation" x="-421.01449275362324" y="-1263.28125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 93" width="150.5" height="112.5"/>
+        <image name="Vector 1" width="375" height="304"/>
+    </resources>
+</document>

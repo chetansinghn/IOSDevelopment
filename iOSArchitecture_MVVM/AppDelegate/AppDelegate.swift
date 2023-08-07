@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
+import SideMenu
+import FirebaseCore
+import FirebaseMessaging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +21,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        IQKeyboardManager.shared.enable = true
+        
+        FirebaseApp.configure()
+        
+        
+        UNUserNotificationCenter.current().delegate = self
+        let authOptions: UNAuthorizationOptions = [.alert,.sound,.badge]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) {
+            success, error in
+            if error != nil {
+                // we are ready to go
+            }
+        }
+        application.registerForRemoteNotifications()
+        
+        // for printing path of core data
+        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+        print(paths.last ?? "")
+        
+//        self.setApLang()
+        // MARK: - For languageCode
+        // Function Get the preferred language from LocalStore and set it for the app
+        setPreferredLanguage()
+                return true
     }
+    
+    func setPreferredLanguage(){
+        let preferredLanguage = Locale.current.languageCode ?? "en"
+            
+        UserDefaults.standard.set(preferredLanguage, forKey: LocalStore.shared.APP_LANG_KEY)
+               UserDefaults.standard.synchronize()
+    }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -53,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "iOSArchitecture_MVVM")
+        let container = NSPersistentContainer(name: "SessionModel")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -91,3 +126,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken
+        print(deviceToken.map{ String (format: "%02.2hhx", $0)}.joined())
+        
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Failed to register with push")
+    }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound, .badge])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("will gets called ")
+        completionHandler()
+    }
+    
+}

@@ -6,16 +6,20 @@
 //  Copyright © 2018 Surjeet Singh. All rights reserved.
 //
 
+
+
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    
+  
     var baseVwModel: BaseViewModel? {
         didSet {
             initBaseModel()
         }
     }
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -50,14 +54,56 @@ class BaseViewController: UIViewController {
                 }
             }
         }
-            
         baseVwModel?.updateLoadingStatus = { [weak self] () in
-            DispatchQueue.main.async {
-                let isLoading = self?.baseVwModel?.isLoading ?? false
-                UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+                    DispatchQueue.main.async {
+                        let isLoading = self?.baseVwModel?.isLoading ?? false
+                        if isLoading {
+                            self?.showActivityIndicator()
+                        } else {
+                            self?.hideActivityIndicator()
+                        }
+                        UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+                    }
+                }
+            }
+            
+            private var activityIndicator: UIActivityIndicatorView? {
+                get {
+                    return objc_getAssociatedObject(self, &BaseViewController.activityIndicatorKey) as? UIActivityIndicatorView
+                }
+                set {
+                    objc_setAssociatedObject(self, &BaseViewController.activityIndicatorKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                }
+            }
+
+            private static var activityIndicatorKey: UInt8 = 0
+            
+            private func showActivityIndicator() {
+                if activityIndicator == nil {
+                    let indicator = UIActivityIndicatorView(style: .gray)
+                    indicator.center = view.center
+                    view.addSubview(indicator)
+                    activityIndicator = indicator
+                }
+                activityIndicator?.startAnimating()
+            }
+            
+            private func hideActivityIndicator() {
+                activityIndicator?.stopAnimating()
+                activityIndicator?.removeFromSuperview()
+                activityIndicator = nil
             }
         }
-    }
-    
-}
+
+
+
+
+
+
+
+
+
+
+
+
 

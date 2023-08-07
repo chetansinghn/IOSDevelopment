@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OnlineData+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:OnlineData+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:iOSArchitecture_MVVM.xcodeproj">
    </FileRef>
    <FileRef

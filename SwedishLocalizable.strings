@@ -1,0 +1,25 @@
+/* 
+  SwedishLocalizable.strings
+  iOSArchitecture_MVVM
+
+  Created by Chetan Singh Negi on 28/07/23.
+  Copyright © 2023 Surjeet Singh. All rights reserved.
+*/
+
+
+// loginScreen
+
+"Let's Log in" = "Låt oss logga in";
+"Welcome Back, you have been missed!" = "Välkommen tillbaka, du har varit saknad!";
+"Keep me signed in" = "Håll mig inloggad";
+"ForgetPassword?" = "Glöm lösenord?";
+"Log in" = "Logga in";
+"Don't have an account yet" = "Har inget konto ännu";
+"Signup" = "Bli Medlem";
+
+
+// ForgetPassword
+
+"Forgot Password" = "Glömt ditt lösenord";
+"Don't worry! It happens. Please enter the address associated with your account" = "Oroa dig inte! Det händer. Ange adressen som är kopplad till ditt konto";
+"send" = "skicka";

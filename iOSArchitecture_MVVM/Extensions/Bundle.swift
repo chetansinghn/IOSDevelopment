@@ -12,6 +12,20 @@ extension Bundle {
     var versionNumber: String? {
         return infoDictionary?["CFBundleShortVersionString"] as? String
     }
+   
+
+    private static var bundle: Bundle!
+
+    public static func localizedBundle() -> Bundle! {
+            let appLang = UserDefaults.standard.value(forKey: LocalStore.shared.APP_LANG_KEY) as? String ?? "en"
+            let path = Bundle.main.path(forResource: appLang, ofType: "lproj")
+            bundle = Bundle(path: path!)
+        return bundle;
+    }
+
+    
+    
+    
     var buildNumber: String? {
         return infoDictionary?["CFBundleVersion"] as? String
     }

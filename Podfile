@@ -6,15 +6,32 @@ target 'iOSArchitecture_MVVM' do
   use_frameworks!
 
   # Pods for iOSArchitecture_MVVM
+  pod 'IQKeyboardManagerSwift'
+  pod 'SideMenu'
+  pod 'DropDown'
+  pod 'Filestack'
+  pod 'FSCalendar'
+  pod 'Kingfisher'
+  pod 'CountryPickerView'
 
-  target 'iOSArchitecture_MVVMTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/AdMob'
+  pod 'Firebase/Database'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Firestore'
 
-  target 'iOSArchitecture_MVVMUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end
+#  target 'iOSArchitecture_MVVMTests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
+
+#  target 'iOSArchitecture_MVVMUITests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
+
+#end

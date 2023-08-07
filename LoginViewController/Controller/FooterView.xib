@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Light.otf">
+            <string>SFProText-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="FooterView" id="iN0-l3-epB" customClass="FooterView" customModule="iOSArchitecture_MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="257"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvc-dk-4Wg">
+                    <rect key="frame" x="57" y="201" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="OIP-QG-n4i"/>
+                        <constraint firstAttribute="height" constant="21" id="mEQ-Rs-T4G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzS-FF-WeB">
+                    <rect key="frame" x="215" y="33" width="166" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="dGN-KK-92g"/>
+                        <constraint firstAttribute="width" constant="166" id="zfd-a3-ORO"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Forget Password?">
+                        <fontDescription key="titleFontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
+                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="-2" bottom="0.0" trailing="0.0"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muh-nV-eQ4">
+                    <rect key="frame" x="249" y="201" width="58" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jNh-NZ-XJ8"/>
+                        <constraint firstAttribute="width" constant="58" id="nTO-6B-n1t"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Sign up">
+                        <fontDescription key="titleFontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="-18" bottom="0.0" trailing="0.0"/>
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep me Signed in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P38-Bm-sbN">
+                    <rect key="frame" x="42" y="31" width="141" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="141" id="dZ1-uv-QX4"/>
+                        <constraint firstAttribute="height" constant="21" id="y9o-dY-Lua"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOy-D1-CRV">
+                    <rect key="frame" x="23" y="32" width="19" height="22"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="Tu8-b9-9Q8"/>
+                        <constraint firstAttribute="height" constant="22" id="mBe-Ie-Pzt"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="checkbox-1-64 (5)" title=" ">
+                        <fontDescription key="titleFontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="14"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPz-TJ-3nS">
+                    <rect key="frame" x="21" y="152" width="351" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Gsf-8n-hSv"/>
+                        <constraint firstAttribute="width" constant="351" id="g5F-Oi-YtW"/>
+                    </constraints>
+                    <color key="tintColor" red="0.99607843137254903" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Log in">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="cvc-dk-4Wg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="57" id="7MG-xy-0nW"/>
+                <constraint firstItem="P38-Bm-sbN" firstAttribute="leading" secondItem="mOy-D1-CRV" secondAttribute="trailing" id="B7h-4u-3oB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qPz-TJ-3nS" secondAttribute="trailing" constant="21" id="F2i-Qj-syT"/>
+                <constraint firstItem="cvc-dk-4Wg" firstAttribute="top" secondItem="qPz-TJ-3nS" secondAttribute="bottom" constant="10" id="F6g-eh-xWb"/>
+                <constraint firstItem="Muh-nV-eQ4" firstAttribute="top" secondItem="qPz-TJ-3nS" secondAttribute="bottom" constant="10" id="GRL-zz-CPd"/>
+                <constraint firstItem="qPz-TJ-3nS" firstAttribute="top" secondItem="yzS-FF-WeB" secondAttribute="bottom" constant="97" id="I0O-ko-ieE"/>
+                <constraint firstItem="P38-Bm-sbN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="Oyu-kg-m04"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yzS-FF-WeB" secondAttribute="trailing" constant="12" id="Rms-ec-ZaJ"/>
+                <constraint firstItem="mOy-D1-CRV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="Un1-xi-6lc"/>
+                <constraint firstItem="Muh-nV-eQ4" firstAttribute="leading" secondItem="cvc-dk-4Wg" secondAttribute="trailing" constant="12" id="YIs-hd-tq9"/>
+                <constraint firstItem="yzS-FF-WeB" firstAttribute="leading" secondItem="P38-Bm-sbN" secondAttribute="trailing" constant="32" id="hPE-DX-Xsi"/>
+                <constraint firstItem="mOy-D1-CRV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="ioR-CP-qAF"/>
+                <constraint firstItem="qPz-TJ-3nS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="sjW-1j-xIU"/>
+                <constraint firstItem="yzS-FF-WeB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="33" id="yB0-QW-dJZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="mOy-D1-CRV" id="NPz-Gi-6XK"/>
+                <outlet property="dontYetLabel" destination="cvc-dk-4Wg" id="plq-Fa-0hJ"/>
+                <outlet property="forgetPasswordButton" destination="yzS-FF-WeB" id="Re4-LX-9bo"/>
+                <outlet property="loginButton" destination="qPz-TJ-3nS" id="T0h-2m-uhG"/>
+                <outlet property="signupButton" destination="Muh-nV-eQ4" id="Fy2-mb-tpR"/>
+            </connections>
+            <point key="canvasLocation" x="-879" y="-240"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox-1-64 (5)" width="22.5" height="22.5"/>
+    </resources>
+</document>
